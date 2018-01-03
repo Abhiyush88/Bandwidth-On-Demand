@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <title>Flask Intro - login page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css" type="text/css">
+  </head>
+  <body>
+        <form action="/login" method="POST">
+           <div class="login">
+                <div class="login-screen">
+                        <div class="app-title">
+                                <h1>Login</h1>
+                        </div>
+
+                        <div class="login-form">
+                                <div class="control-group">
+                                <input type="text" class="login-field" placeholder="username" name="username" value="{{
+          request.form.username }}">
+                                <label class="login-field-icon fui-user" for="login-name"></label>
+                                </div>
+
+                                <div class="control-group">
+                                <input type="password" class="login-field" placeholder="password" name="password" value="{{
+          request.form.password }}">
+                                <label class="login-field-icon fui-lock" for="login-pass"></label>
+                                </div>
+
+                <input type="submit" value="Log in" class="btn btn-primary btn-large btn-block" >
+                            <br>
+                        </div>
+                </div>
+           </div>
+       </form>
+  </body>
+</html>
+

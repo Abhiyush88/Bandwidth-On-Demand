@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SDN Application - On Demand Bandwidth</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css" type="text/css">
+</head>
+<body>
+  <form action="/index" method="post">
+           <div class="bandwidth">
+                <div class="login-screen">
+                        <div class="app-title">
+                                <h1>On-Demand Bandwidth Settings</h1>
+                        </div>
+                   <div class="login-form">
+                        <div class="control-group">
+                        Host MAC: <input type="text" name="Host_Mac" class="login-field">
+                        <br><br>
+                        </div>
+                        <div class="control-group">
+                        Min Bandwidth(in MB) :<input type="text" name="MinBandwidth" class="login-field">
+                        <br><br>
+                        </div>
+                        <div class="control-group">
+                        Max Bandwidth(in MB) :<input type="text" name="MaxBandwidth" class="login-field">
+                        <br><br>
+                        </div>
+                        <input type="submit" value="Submit" class="btn btn-primary btn-large btn-block"><br>
+                        <input type="submit" value="Logout" class="btn btn-primary btn-large btn-block">
+                   </div>
+               </div>
+           </div>
+  </form>
+</body>
+</html>
+
